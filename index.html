@@ -15,7 +15,6 @@
         .profile-glow { box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); }
         .card-hover:hover { border-color: #3b82f6; transform: translateY(-5px); transition: all 0.3s ease; }
         html { scroll-behavior: smooth; }
-        /* Prevent layout shift and clipping */
         .no-clipping { padding-right: 0.5rem; padding-bottom: 0.25rem; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -51,7 +50,7 @@
                 <span class="italic pr-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400 pb-2">Maligana</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 mb-8 leading-relaxed font-light px-2 md:px-0">
-                BSc Computer Science student @ <strong>North-West University</strong> & <strong>AWS re/Start Cloud Scholar</strong>. Specialized in cloud architecture, full-stack development, and data-driven automation.
+                BSc Computer Science student @ <strong>North-West University</strong> & <strong>AWS re/Start Graduate</strong>. Specialized in cloud architecture, full-stack development, and data-driven automation.
             </p>
             <div class="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-4">
                 <a href="https://www.linkedin.com/in/kay-dev6/" target="_blank" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-sm hover:bg-blue-500 shadow-xl shadow-blue-900/20 transition-all text-center">LinkedIn</a>
@@ -65,40 +64,49 @@
         <h2 class="text-3xl font-bold text-white mb-12 italic underline decoration-blue-500 underline-offset-8 pr-4">Credentials & Training</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="card-hover p-8 bg-slate-900/40 border border-blue-500/30 rounded-xl block">
-                <div class="flex flex-col gap-2">
-                    <span class="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">AWS re/Start Program</span>
-                    <h4 class="text-white font-bold text-xl leading-tight italic pr-2">Cloud Foundations & Administration</h4>
-                    <p class="text-slate-400 text-xs mt-3 leading-relaxed">Hands-on training in AWS core services, Linux administration, VPC networking, security, and CLI automation.</p>
-                    <p class="text-blue-400 text-xs mt-4 font-mono tracking-widest uppercase">In Progress (STS Africa)</p>
+            <!-- AWS re/Start Graduate Badge Card -->
+            <a href="https://www.credly.com/badges/583cf110-e71c-43ed-bfe9-cf36b2597d31/public_url" target="_blank" class="card-hover p-8 bg-slate-900/40 border border-blue-500/30 rounded-xl flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-start justify-between gap-4 mb-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">AWS re/Start Program</span>
+                            <h4 class="text-white font-bold text-xl leading-tight italic pr-2 group-hover:text-blue-400 transition-colors">AWS re/Start Graduate</h4>
+                        </div>
+                        <img src="aws-re-start-graduate.png" alt="AWS re/Start Graduate Badge" class="w-16 h-16 object-contain shrink-0 drop-shadow-[0_0_12px_rgba(59,130,246,0.3)] group-hover:scale-105 transition-transform">
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">Completed intensive training in AWS core services, Linux administration, VPC networking, security, and CLI automation.</p>
                 </div>
-            </div>
+                <p class="text-blue-400 text-xs mt-6 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verify on Credly ↗</p>
+            </a>
 
-            <div class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl block">
+            <!-- Fortinet -->
+            <div class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl flex flex-col justify-between">
                 <div class="flex flex-col gap-2">
                     <span class="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">Fortinet Certification</span>
                     <h4 class="text-white font-bold text-xl leading-tight italic pr-2">Fortinet Certified Fundamentals (FCF)</h4>
                     <p class="text-slate-400 text-xs mt-3 leading-relaxed">Core cybersecurity principles, threat intelligence, network defense strategies, and SOC operations.</p>
-                    <p class="text-slate-500 text-xs mt-4 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verified Credential</p>
                 </div>
+                <p class="text-slate-500 text-xs mt-6 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verified Credential</p>
             </div>
 
-            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EF665AC9F9DADAA0ACE52622ADEFAE6F208C58D75049D6D92D81A9D3D2B71558" target="_blank" class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl block">
+            <!-- OCI Data Science -->
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EF665AC9F9DADAA0ACE52622ADEFAE6F208C58D75049D6D92D81A9D3D2B71558" target="_blank" class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl flex flex-col justify-between">
                 <div class="flex flex-col gap-2">
                     <span class="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">Oracle Certification</span>
                     <h4 class="text-white font-bold text-xl leading-tight italic pr-2">OCI Data Science Professional</h4>
                     <p class="text-slate-400 text-xs mt-3 leading-relaxed">Machine learning pipelines, predictive modeling, and AI lifecycle management on Oracle Cloud.</p>
-                    <p class="text-slate-500 text-xs mt-4 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verify Credential ↗</p>
                 </div>
+                <p class="text-slate-500 text-xs mt-6 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verify Credential ↗</p>
             </a>
 
-            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EF665AC9F9DADAA0ACE52622ADEFAE6F917F66A7C13498E384797074919B391A" target="_blank" class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl block md:col-span-2 lg:col-span-1">
+            <!-- OCI Data Platform -->
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=EF665AC9F9DADAA0ACE52622ADEFAE6F917F66A7C13498E384797074919B391A" target="_blank" class="card-hover p-8 bg-slate-900/40 border border-white/10 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-1">
                 <div class="flex flex-col gap-2">
                     <span class="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">Oracle Certification</span>
                     <h4 class="text-white font-bold text-xl leading-tight italic pr-2">Data Platform Foundations Associate</h4>
                     <p class="text-slate-400 text-xs mt-3 leading-relaxed">Autonomous databases, SQL optimization, and enterprise data storage architectures.</p>
-                    <p class="text-slate-500 text-xs mt-4 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verify Credential ↗</p>
                 </div>
+                <p class="text-slate-500 text-xs mt-6 font-mono tracking-widest uppercase underline underline-offset-4 decoration-blue-500/50">Verify Credential ↗</p>
             </a>
 
         </div>
@@ -113,7 +121,7 @@
                     Bridging the gap between <strong>Cloud Infrastructure</strong>, <strong>Full-Stack Engineering</strong>, and <strong>Data Analytics</strong>. Focused on scalable architectures, automated resource management, and cost-effective cloud operations.
                 </p>
                 <div class="space-y-4 font-bold uppercase tracking-tighter text-blue-400 text-sm">
-                    <p>• AWS re/Start Cloud Scholar (STS Africa)</p>
+                    <p>• AWS re/Start Graduate (STS Africa)</p>
                     <p>• Oracle Cloud Infrastructure Data Science Professional</p>
                     <p>• Fortinet Certified Fundamentals (FCF / NSE 1)</p>
                     <p>• Telkom 10x Hackathon Participant (2024, 2025)</p>
@@ -155,7 +163,6 @@
         <h2 class="text-center text-3xl md:text-4xl font-bold text-white mb-20 italic underline decoration-blue-500 underline-offset-8 pr-4">Featured Technical Work</h2>
         <div class="grid md:grid-cols-2 gap-10">
             
-            <!-- Project 1: AWS Resource Governance -->
             <div class="group p-8 md:p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:border-blue-500/50 transition-all duration-500">
                 <div class="flex justify-between items-start mb-6">
                     <h3 class="text-2xl font-bold text-white group-hover:text-blue-500 italic tracking-tighter pr-2">aws.resource_governance</h3>
@@ -165,7 +172,6 @@
                 <div class="text-[10px] font-bold text-slate-600 group-hover:text-blue-500 tracking-widest uppercase">#AWS #AWSCLI #JMESPath #Bash #CloudOps</div>
             </div>
 
-            <!-- Project 2: AWS Workload Cost Optimization -->
             <div class="group p-8 md:p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:border-blue-500/50 transition-all duration-500">
                 <div class="flex justify-between items-start mb-6">
                     <h3 class="text-2xl font-bold text-white group-hover:text-blue-500 italic tracking-tighter pr-2">aws.cost_optimization</h3>
@@ -175,7 +181,6 @@
                 <div class="text-[10px] font-bold text-slate-600 group-hover:text-blue-500 tracking-widest uppercase">#AWS #EC2 #CostOptimization #PricingCalculator</div>
             </div>
 
-            <!-- Project 3: dnw.platform -->
             <div class="group p-8 md:p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:border-blue-500/50 transition-all duration-500">
                 <div class="flex justify-between items-start mb-6">
                     <h3 class="text-2xl font-bold text-white group-hover:text-blue-500 italic tracking-tighter pr-2">dnw.platform</h3>
@@ -188,7 +193,6 @@
                 <div class="text-[10px] font-bold text-slate-600 group-hover:text-blue-500 tracking-widest uppercase">#TypeScript #Firebase #WebDev</div>
             </div>
 
-            <!-- Project 4: Telkom 10X Hackathon -->
             <div class="group p-8 md:p-10 bg-white/[0.01] border border-blue-500/20 rounded-3xl border-dashed">
                 <h3 class="text-2xl font-bold text-white mb-6 italic tracking-tighter pr-2">Telkom 10X Hackathon</h3>
                 <p class="text-slate-400 text-sm mb-8 leading-relaxed">Two-time participant (2024, 2025). Collaborated within cross-functional teams to design technology prototypes under competitive constraints.</p>
@@ -198,14 +202,12 @@
                 </div>
             </div>
 
-            <!-- Project 5: YOLOv8 Research -->
             <a href="https://github.com/MaliganaD/CMPG313_Lab1_YOLOv8" target="_blank" class="group block p-8 md:p-10 bg-white/[0.01] border border-white/5 rounded-3xl hover:border-blue-500/50 transition-all duration-500">
                 <h3 class="text-2xl font-bold text-white group-hover:text-blue-500 mb-6 italic tracking-tighter pr-2">yolo_v8_research</h3>
                 <p class="text-slate-400 text-sm mb-8 leading-relaxed">Developed a real-time object detection system using the YOLOv8 framework for advanced visual data analysis.</p>
                 <div class="text-[10px] font-bold text-slate-600 group-hover:text-blue-500 tracking-widest uppercase">#Python #MachineLearning #Analysis</div>
             </a>
             
-            <!-- Project 6: LUMA -->
             <div class="p-8 md:p-10 bg-white/[0.01] border border-white/5 rounded-3xl">
                 <h3 class="text-2xl font-bold text-white mb-6 italic tracking-tighter decoration-blue-500 underline pr-2">LUMA</h3>
                 <p class="text-slate-400 text-sm mb-8 leading-relaxed">Lead Developer. Engineering a multivendor e-commerce application featuring a "Just-In-Time" inventory model built with Python and SQL.</p>
